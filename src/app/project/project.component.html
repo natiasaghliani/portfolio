@@ -1,0 +1,42 @@
+<div class="relative top-32 p-4 font text-center">
+    <div>
+        <h1 class="text-3xl">Projects Using Angular Framework</h1>
+    </div>
+    <div class="container flex flex-wrap gap-6 justify-center p-6">
+        @for(project of angularProjects; track project){
+        <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden max-w-xl p-4 transform transition-transform duration-200 hover:-translate-y-1 flex flex-col items-center">
+            <div class="border-4 border-fuchsia-500 w-80 rounded-lg">
+                <img [src]="project.imageUrl" alt="{{ project.title }}" class=" object-cover h-48">
+
+            </div>
+            <div class="p-4 text-center max-w-80">
+                <h3 class="text-lg font-semibold text-gray-800">{{ project.title }}</h3>
+                <p class="text-sm text-gray-600 mt-2">{{ project.description }}</p>
+                <a [href]="project.link" target="_blank"
+                    class="inline-block mt-4 px-4 py-2 bg-fuchsia-500 text-white rounded-lg hover:bg-fuchsia-600 transition-colors">View
+                    Project</a>
+            </div>
+        </div>}
+    </div>
+    <div>
+        <h1 class="text-3xl">Projects Using Javascript</h1>
+    </div>
+    <div class="container flex flex-wrap gap-6 justify-center p-6">
+        @for(jsProject of jsProjects; track jsProject){
+        <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden max-w-xl p-4 transform transition-transform duration-200 hover:-translate-y-1 flex flex-col items-center">
+            <div class="border-4 border-fuchsia-500 w-80 rounded-lg">
+                <img [src]="jsProject.imageUrl" alt="{{ jsProject.title }}" class=" object-cover h-48">
+
+            </div>
+            <div class="p-4 text-center max-w-80">
+                <h3 class="text-lg font-semibold text-gray-800">{{ jsProject.title }}</h3>
+                <p class="text-sm text-gray-600 mt-2">{{ jsProject.description }}</p>
+                <a [href]="jsProject.link" target="_blank"
+                    class="inline-block mt-4 px-4 py-2 bg-fuchsia-500 text-white rounded-lg hover:bg-fuchsia-600 transition-colors">View
+                    Project</a>
+            </div>
+        </div>}
+    </div>
+</div>
