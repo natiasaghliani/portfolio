@@ -53,6 +53,12 @@ export class ProjectComponent implements OnInit{
       description: 'An app that allows adding users and displaying a list of added users, managed efficiently with NgRx for state control.',
       imageUrl: '../../assets/images/add-user.png',  
       link: 'https://custom-users-management.netlify.app/'
+    },
+    {
+      title: 'MyTodo - Your Personal Task Manager',
+      description: 'A sleek and responsive todo app built with Angular, styled using Tailwind CSS. Features include secure navigation with route guards, dynamic forms with FormGroup, and efficient local storage for user data management. Perfect for staying organized and productive!',
+      imageUrl: '../../assets/images/todo.png',  
+      link: 'https://my-todo-app-natt.netlify.app/'
     }
   ]
 
