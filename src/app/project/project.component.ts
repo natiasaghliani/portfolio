@@ -86,9 +86,5 @@ export class ProjectComponent implements OnInit{
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    // this.route.paramMap.subscribe(params => {
-    //   this.projectId = Number(params.get('id'));
-    //   // You could load more project details here based on the ID
-    // });
   }
 }
