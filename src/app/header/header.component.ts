@@ -13,9 +13,35 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent {
   isScrolled = false;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll(): void {
-    this.isScrolled = window.scrollY > 50; 
+  ngOnInit() {
+    const btn = document.querySelector(".mobile-menu-button");
+    const closeBtn = document.querySelector(".close-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+    const menuLinks = document.querySelectorAll(".mobile-menu a");
+
+    if (btn && menu) {
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    }
+
+    if (closeBtn && menu) {
+      closeBtn.addEventListener("click", () => {
+        menu.classList.add("hidden");
+      });
+    }
+
+    menuLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        if (menu) {
+          menu.classList.add("hidden");
+        }
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      this.isScrolled = window.scrollY > 0;
+    });
   }
 
 }

@@ -3,10 +3,30 @@
     <div>
         <a href="#" class="text-2xl">NS</a>
     </div>
-    <div class="flex w-4/12 justify-between">
-        <a routerLink="/" class="hover:font-semibold">Home</a>
-        <a routerLink="about" class="hover:font-semibold">About</a>
-        <a routerLink="project" class="hover:font-semibold">Projects</a>
-        <a href="#" class="hover:font-semibold">Resume</a>
+    <div class="hidden md:flex justify-between gap-5">
+        <a routerLink="/" class="hover:text-blue-600">Home</a>
+        <a routerLink="about" class="hover:text-blue-600">About</a>
+        <a routerLink="project" class="hover:text-blue-600">Projects</a>
+        <a href="#" class="hover:text-blue-600">Resume</a>
     </div>
+    <div class="md:hidden flex items-center">
+        <button class="mobile-menu-button">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+<div class="mobile-menu md:hidden flex flex-col items-right gap-2 p-4 bg-white-800/70 backdrop-blur-md fixed top-0 right-0 w-full h-full z-10">
+    <div class="flex justify-end">
+        <button class="close-menu-button">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+    <a routerLink="/" class="block px-4 py-2 hover:text-blue-600">Home</a>
+    <a routerLink="about" class="block px-4 py-2 hover:text-blue-600">About</a>
+    <a routerLink="project" class="block px-4 py-2 hover:text-blue-600">Projects</a>
+    <a href="#" class="block px-4 py-2 hover:text-blue-600">Resume</a>
 </div>

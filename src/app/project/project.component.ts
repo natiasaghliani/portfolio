@@ -20,19 +20,19 @@ export class ProjectComponent implements OnInit{
   angularProjects: Project[] = [
     {
       title: 'Number Selection Game',
-      description: 'An interactive number game developed in Angular.',
+      description: 'An interactive number game built with Angular, where players select numbers in order within a time limit, featuring a timer and a give-up option.',
       imageUrl: '../../assets/images/game1-100.png',  
       link: 'https://game1-100.netlify.app/'
     },
     {
       title: 'Weather App',
-      description: 'A weather app built with Angular and OpenWeatherMap API.',
+      description: 'A weather app built with Angular and OpenWeatherMap API, offering real-time updates, search, and data like temperature and humidity.',
       imageUrl: '../../assets/images/weather-app.png',  
       link: 'https://my-weather-app-natia.netlify.app/'
     },
     {
-      title: 'User Dashboard with API-Driven Posts and To-Do Lists',
-      description: 'A platform that displays user profiles, posts, and to-do lists, all fetched through an API integration.',
+      title: 'Dashboard | To-Dos & Posts',
+      description: 'A platform that displays user profiles, posts, and to-do lists, all fetched and updated in real-time through an API integration.',
       imageUrl: '../../assets/images/users-post.png',  
       link: 'https://user-todo-list-natia.netlify.app/'
     },
@@ -43,21 +43,28 @@ export class ProjectComponent implements OnInit{
       link: 'https://master--n-e-comm.netlify.app/'
     },
     {
-      title: 'User Info Cards with API Integration',
+      title: 'User Info Cards',
       description: 'Displays user info cards with data fetched from an API, showcasing key details about each user.',
       imageUrl: '../../assets/images/users.png',  
       link: 'https://custom-users.netlify.app/'
     },
     {
-      title: 'User Management with NgRx State Management',
-      description: 'An app that allows adding users and displaying a list of added users, managed efficiently with NgRx for state control.',
+      title: 'User Management',
+      description: 'An app that allows adding users and displaying a list of users, managed efficiently with NgRx for state control.',
       imageUrl: '../../assets/images/add-user.png',  
       link: 'https://custom-users-management.netlify.app/'
     },
     {
-      title: 'MyTodo - Your Personal Task Manager',
-      description: 'A sleek and responsive todo app built with Angular, styled using Tailwind CSS. Features include secure navigation with route guards, dynamic forms with FormGroup, and efficient local storage for user data management. Perfect for staying organized and productive!',
+      title: 'Todo - Personal Task Manager',
+      description: 'A sleek Angular todo app with Tailwind CSS, featuring route guards, forms, and local storage.',
       imageUrl: '../../assets/images/todo.png',  
+      link: 'https://my-todo-app-natt.netlify.app/'
+    }
+    ,
+    {
+      title: 'Recipe Sharing App',
+      description: 'Angular-based recipe app with search, routing, and form validation, offering a smooth experience.',
+      imageUrl: '../../assets/images/recipe.png',  
       link: 'https://my-todo-app-natt.netlify.app/'
     }
   ]
@@ -69,7 +76,7 @@ export class ProjectComponent implements OnInit{
       imageUrl: '../../assets/images/rps.png',  
       link: 'https://natiasaghliani.github.io/rock-paper-scissor-JS/'
     },{
-      title: 'ATM Simulation with JavaScript',
+      title: 'ATM Simulation',
       description: 'A JavaScript-based ATM simulation where users can select an account, view balances, and perform deposit or withdrawal transactions.',
       imageUrl: '../../assets/images/atm.png',  
       link: 'https://natiasaghliani.github.io/ATM-Project/'
